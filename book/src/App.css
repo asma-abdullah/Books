@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
+
+.rating>span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+
+.rating>span:hover:before,
+.rating>span:hover~span:before {
+  content: "\2605";
+  position: absolute;
+}
+
+.summary {
+  font-weight: bold;
+}
+
+.review {
+  font-weight: bold;
+}
+
+.book-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.book-cover {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.book-info {
+  margin-left: 50px;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.real-author {
+  font-style: normal;
+  margin-top: 3px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.real-price {
+  font-style: normal;
+  margin-top: 3px;
+}
+
+.language {
+  font-weight: bold;
+}
+
+.real-language {
+  font-style: normal;
+  margin-top: 3px;
+}
+
+.reviewer {
+  font-style: italic;
+  margin-top: 10px;
+}
